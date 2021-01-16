@@ -4,6 +4,7 @@ using System;
 
 var travel = TravelServiceLiftedImp.Instance.CreateTravelRequest("Łódź", "Malaga");
 var database = new TravelRepositoryArangoDb();
+travel(database);
 Console.WriteLine(travel);
 
 public interface ITravel { }
